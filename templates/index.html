@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <!-- Incluye Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Enlace al archivo CSS de SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav nav-tabs flex-column mt-3" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="chat-tab" data-toggle="tab" href="#chat" role="tab"
+                            aria-controls="chat" aria-selected="true">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="reports-tab" data-toggle="tab" href="#reports" role="tab"
+                            aria-controls="reports" aria-selected="false">Reportes</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+                        <div id="chat-container" class="mt-3">
+                            <h3>Asistente Virtual</h3>
+                            <div class="chat-box" id="chat-box">
+                                <!-- Contenido del chat -->
+                                <img src="../static/img/bot-profile.png" class="profile-image bot-image" alt="Bot Image">
+                                <div class="message-container bot-message">
+                                    <div class="message-text">Hola, ¿en qué puedo ayudarte?</div>
+                                </div>
+                            </div>
+                            <div class="user-input-container">
+                                <input type="text" id="user-input" class="form-control"
+                                    placeholder="Escribe tu pregunta...">
+                                <button id="send-button" class="btn btn-success" onclick="sendMessage()">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="reports" role="tabpanel" aria-labelledby="reports-tab">
+                        <!-- Contenido del panel de reportes -->
+                        <div id="report-container" class="mt-3">
+                            <h3>Hacer reporte</h3>
+                            <textarea id="report-input" class="form-control" placeholder="Escribe tu reporte..." rows="4"></textarea>
+                            <button id="report-button" class="btn btn-primary mt-2" onclick="sendReport()">Enviar Reporte</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Incluye Bootstrap JS y Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Enlace al archivo JavaScript de SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/scripts.js"></script>
+</body>
+
+</html>
