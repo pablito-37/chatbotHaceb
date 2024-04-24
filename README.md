@@ -1,8 +1,7 @@
 Explicación para Ejecutar el Proyecto
 
 1. Instalar Dependencias:
-Antes de ejecutar el proyecto, asegúrate de tener Python instalado en tu sistema. Luego, sigue estos pasos:
-# Instala las dependencias desde requirements.txt
+Antes de ejecutar el proyecto, asegúrate de tener Python (versión recomendada 3.9.0) instalado en tu sistema. Luego, sigue estos pasos, ejecuta el siguiente comando:
 pip install -r requirements.txt
 
 2. Crear el Archivo .env:
